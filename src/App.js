@@ -1,17 +1,7 @@
 import { useState } from "react";
 
-const combos = [
-  { lists: "List A + List M", tags: ["HI", "CORE"] },
-  { lists: "List D + List N", tags: ["HI", "CORE", "LEGS", "UPP"] },
-  { lists: "List J + List H", tags: ["HI", "CORE", "FUN"] },
-  { lists: "List F + List R", tags: ["MOD", "CORE"] },
-  { lists: "List C + List F", tags: ["HI", "LEGS"] },
-  { lists: "List K + List N", tags: ["MOD", "LEGS", "UPP"] },
-  { lists: "List E + List Q", tags: ["REC", "CORE"] },
-  { lists: "List G + List R", tags: ["MOD", "REC"] },
-  { lists: "List L + List B", tags: ["MOD", "FUN"] },
-  { lists: "List R + List H", tags: ["MOD", "CORE", "FUN"] },
-];
+import combos from './combos.json';
+
 
 export default function RingFitComboPicker() {
   const [combo, setCombo] = useState(null);
